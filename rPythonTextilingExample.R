@@ -84,3 +84,17 @@ text <- paste("espeak -v+whisper -k20 -p 79 -s 225 -f \"", paste(dataDumpFolderP
 system(text)
 }
 }
+
+
+python.exec("import nltk")
+python.exec("tokens = nltk.word_tokenize('Ivan shot the bear.'")
+python.exec("print(tokens)")
+python.exec("tagged = nltk.pos_tag(tokens)")
+python.exec("entities = nltk.ne_chunk(tagged)")
+python.exec("print(entities)")
+
+python.exec("tokens = nltk.word_tokenize('Ivan eats the apple.'")
+python.exec("print(tokens)")
+python.exec("tagged = nltk.pos_tag(tokens)")
+python.exec("entities = nltk.ne_chunk(tagged)")
+python.exec("print(entities)")
