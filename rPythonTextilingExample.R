@@ -98,3 +98,11 @@ python.exec("print(tokens)")
 python.exec("tagged = nltk.pos_tag(tokens)")
 python.exec("entities = nltk.ne_chunk(tagged)")
 python.exec("print(entities)")
+
+
+ system(paste("python ne.py ", "'Ivan shot a bear.'", sep=""))
+ system(paste("python /home/kingfish/nes.py ", "'Ivan flew into town. Then he went for Chinese takeout'", sep=""))
+
+
+
+ 
